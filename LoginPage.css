@@ -60,7 +60,7 @@ body {
     left: 10px;
     transform: translateY(-50%);
     color: #aaa;
-    font-size: clamp(14px, 2vw, 16px)
+    font-size: clamp(14px, 2vw, 16px);
     font-size: 16px;
     pointer-events: none;
     transition: 0.3s;
@@ -77,7 +77,8 @@ body {
 }
 
 /* Button */
-button {clamp(10px, 2vw, 12px);
+button {
+    font-size: clamp(10px, 2vw, 12px);
     background: #4e54c8;
     color: white;
     border: none;
@@ -95,7 +96,8 @@ button:hover {
     box-shadow: 0 5px 15px rgba(59, 193, 168, 0.3);
 }
 
-button:active {clamp(12px, 1.5vw, 14px);
+button:active {
+    font-size: clamp(12px, 1.5vw, 14px);
     animation: shake 0.5s ease-in-out;
 }
 
@@ -136,11 +138,10 @@ button:active {clamp(12px, 1.5vw, 14px);
 @media (min-width: 769px) {
     .login-container {
         max-width: 400px;
-    }
-    transform: translateY(0)
+    transform: translateY(0);}
 button:hover {
     background: #3bc1a8;
-}
+}}
 
 /* Error Message */
 .error {
