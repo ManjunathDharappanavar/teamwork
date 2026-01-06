@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
     const error = document.getElementById("error");
 
     // Simple validation
-    if(email === "chetan@123.com" && password === "123456"){
+    if(email === "chetan@e.com" && password === "123"){
         error.textContent = "";
         // Redirect to dashboard page
         window.location.href = "index.html";
