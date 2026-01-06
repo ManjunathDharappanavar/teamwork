@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f8f6;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+  color: #2e7d32;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 17px;
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #2e7d32;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  color: #1b5e20;
+}
+
+.section p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,128,0,0.15);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+/* VALUES */
+.values ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.values li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* CTA */
+.cta {
+  background: #e8f5e9;
+}
+
+.cta button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  background: #43a047;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
