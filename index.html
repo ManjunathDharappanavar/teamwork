@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARC Project</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="resources/logo.png" alt="MARC Logo" class="logo" loading="lazy">
+        <h1>MARC Project</h1>
+        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="#features">Features</a></li> -->
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to MARC</h2>
+        <p>Management of Assets, Resources and Controlling — Inventory Management System by Students</p>
+        <div>
+            <img src="resources/assets.png" alt="assets image" loading="lazy">
+            <img src="resources/resources.png" alt="resources image" loading="lazy">
+            <img src="resources/controlling.png" alt="controlling image" loading="lazy">
+        </div>
+    </section>
+
+
+    <div class="dashboard-box">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Redirect back to login page
+            window.location.href = "LoginPage.html";
+        }
+    </script>
+
+       <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 MARC Project | Developed by the Student Team</p>
+    </footer>
+</body>
+
+</html>
