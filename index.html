@@ -1,21 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Manjunath Dharappanavar</h1>
-    <h1>Asif Nadaf 124</h1>
-    <h1>Rakshita athani</h1>
-    <h1>another update</h1>
-    <h1>Chetan Kamble</h1>
-    <h1>hello asif badya</h1>
-    <h1>Chetan Kamble</h1>
-    <h1>CK</h1>
-    <h2>learning github</h2>
-    <p>This is manjunath doing a routine check</p>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-title">
+                <img src="resources/logo.png" alt="MARC Logo" class="logo" loading="lazy">
+                <h1>MARC Project</h1>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="#features">Features</a></li> -->
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to MARC</h2>
+        <p>Management of Assets, Resources and Controlling — Inventory Management System by Students</p>
+        <div>
+            <img src="resources/assets.png" alt="assets image" loading="lazy">
+            <img src="resources/resources.png" alt="resources image" loading="lazy">
+            <img src="resources/controlling.png" alt="controlling image" loading="lazy">
+        </div>
+    </section>
+
+
+    <div class="dashboard-box">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Redirect back to login page
+            window.location.href = "LoginPage.html";
+        }
+
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
+
+       <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 MARC Project | Developed by the Student Team</p>
+    </footer>
 </body>
+
 </html>
