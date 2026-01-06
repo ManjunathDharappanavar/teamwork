@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
@@ -35,13 +37,21 @@
     </section>
 
 
+    <div class="dashboard-box">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
 
+    <script>
+        function logout() {
+            // Redirect back to login page
+            window.location.href = "LoginPage.html";
+        }
+    </script>
 
-
-    <!-- Footer -->
+       <!-- Footer -->
     <footer id="contact">
         <p>&copy; 2026 MARC Project | Developed by the Student Team</p>
     </footer>
-
 </body>
+
 </html>
